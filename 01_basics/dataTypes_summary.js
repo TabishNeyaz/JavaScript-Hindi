@@ -43,17 +43,39 @@ const myFunction = function(){
     console.log("Hello World");
 } 
 
-console.log(typeof bigNumber);
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof anotherId);
-console.log(typeof heros);
-console.log(typeof myObj);
-console.log(typeof myFunction);
+// console.log(typeof bigNumber);
+// console.log(typeof score);
+// console.log(typeof scoreValue);
+// console.log(typeof isLoggedIn);
+// console.log(typeof outsideTemp);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof anotherId);
+// console.log(typeof heros);
+// console.log(typeof myObj);
+// console.log(typeof myFunction);
 // myFunction();
 
 
+// Stack (Primitive) , Heap (Non-Primitive)
+
+
+let myCity = "Patna";
+
+let currentCity = myCity;
+
+currentCity = "Banglore"
+
+console.log(myCity);
+console.log(currentCity);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "tabish@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
